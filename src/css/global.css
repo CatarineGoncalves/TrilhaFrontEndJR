@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    }
+
+h1, h2, h3, h4 {
+    font-family: "Roboto", sans-serif;
+
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+h2, h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    word-spacing: 3px;
+
+}
+
+.colorCoders {
+    color: #e53939;
+}
+
+.colorsTwitch {
+    color: #6034b2;
+    font-weight: bold;
+}
+
+
+
+
+.sectionTitle {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+main {
+    width: 100%;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 12vh;
+    margin: 0;
+}
+
+header .logo img {
+    height: 10vh;
+    margin-left: 10px;
+}
+
+/* Introdução */
+
+.mainIntroduce {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+
+.introduce {
+    text-align: -webkit-center;
+    
+}
+
+.introduce .welcomeMessage {
+    text-align: center;
+    margin-top: 4em;
+    background-color: #f4f4f4;
+}
+
+
+
+/* Sobre mim */
+
+
+.aboutMe {
+    background-color:#1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-top: 3em;
+}
+
+.aboutMeResume {
+    padding: 20px;
+    margin-bottom: 5em;
+    width: 90%;
+    box-shadow: rgba(229, 57, 57, 0.4) 0px 5px, rgba(229, 57, 57, 0.3) 0px 10px, rgba(229, 57, 57, 0.2) 0px 15px, rgba(229, 57, 57, 0.1) 0px 20px, rgba(229, 57, 57, 0.05) 0px 25px;
+
+    background-color: #f7f7f7;
+    color: #000;
+
+    border-radius: 10px;
+
+}
+
+.aboutMeResume h3 {
+    margin-bottom: 20px;
+}
+
+
+/* Tecnologia */
+
+
+
+/* Personalidade */
+.aboutPersonality {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px;
+    margin-top: 3em;
+}
+
+.personalityMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.personalityArrow {
+    transform: rotate(90deg);
+}
+
+.personalityContainer {
+    background-color: #f4f4f4;
+    color: #000;
+    height: 31vh;
+    width: 100%;
+    margin: 17px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.personalityContainer img {
+    height: 10vh;
+    margin-right: 20px;
+}
+
+.personalityTrait {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.a-Twitch {
+    color: #000;
+}
+
+
+/* Frases */
+.aboutPhases {
+    align-content: center;
+    width: 100%;
+    overflow: hidden;
+    text-align: -webkit-center;
+}
+
+.phase {
+    background-color: #000;
+    width: 100%;
+    display: none;
+    padding: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 65vh;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.phaseImg {
+    height: 22vh;
+    border-radius: 50%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.phaseCharacter, .phaseQuote {
+    text-align: center;
+}
+
+
+
+/* Motivação */
+
+.aboutFAQ {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.sectionFAQTitle {
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+
+.aboutFAQ details {
+    display: block; 
+    width: auto;
+    margin: 10px 0;
+    
+}
+
+.aboutFAQ summary {
+    list-style-type: none;
+    background: #1b1b1b;;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:before {
+    content: "+";
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0;
+    width: 20px;
+    text-align: center;
+ }
+ 
+ details[open] summary:before {
+   content: "-";
+ }
+
+
+
+.acordionFAQ {
+    width: 100%;
+}
+
+.acordionFAQ p {
+    border: 1px solid #1b1b1b;;
+    padding: 20px;
+    margin-top: -13px;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+/* Rodapé */
+
+
+footer {
+    background-color: #1b1b1b;
+    padding: 20px;
+    text-align: center;
+    margin-top: 3em;
+    border-radius: 50px 40px 0px 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #e53939;
+}
+
+.footer-center {
+    margin-top: 10px;
+}
+
+.footer-center .btn {
+    display: block;
+    width: 200px;
+    margin: 5px auto;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e53939;
+    border-radius: 5px;
+}
+
+.footer-center .btn:hover {
+    background-color:  #c62828;
+}
+
+.footer-right {
+    margin-top: 10px;
+}
+
+.footer-right a {
+    margin: 0 10px;
+}
+
+.footer-right img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-right img:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+
+/* Responsivo */
+@media only screen and (min-width: 700px) { 
+    .mainIntroduce {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .phase {
+        width: 50%;
+        height: 400px;
+        text-align: inherit;
+    }
+
+    .phaseImg {
+        margin-top: 3em;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+    
+    .aboutMeResume {
+        width: 90%;
+ 
+    }
+    
+    .personalityMain {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .personalityTrait {
+        font-size: 16px;
+    }
+
+    .personalityArrow {
+        transform: rotate(0deg);
+    }
+
+    .arrowContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .phaseQuote {
+        width: 75%;
+    }
+
+    .textFAQ {
+        width: 50%;
+    }
+
+   
+}

@@ -1,0 +1,15 @@
+.arrow {
+    animation: slidein 300ms linear infinite alternate;
+    height: 60px;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateY(0); /* Estado inicial da animação */
+        fill: #e53939;
+    }
+    100% {
+        transform: translateY(30px); /* Estado final da animação */
+        fill: white;
+    }
+}

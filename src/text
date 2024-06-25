@@ -1,0 +1,307 @@
+/* global.css */
+
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para a logo */
+.logo img {
+    width: 100px;
+    margin: 20px;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilos da introdução */
+.introduce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blob {
+    display: none; /* Esconder em dispositivos móveis */
+}
+
+.mainIntroduce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profileImg img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #333;
+}
+
+.welcomeMessage {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.welcomeTitle {
+    font-size: 2rem;
+    color: #333;
+}
+
+.welcomeName,
+.welcomePosition {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Estilo da seta */
+.arrowContainer {
+    margin-top: 20px;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    fill: #333;
+}
+
+/* Seções */
+.sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sectionInfo,
+.sectionText,
+.aboutMeResume {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.sectionInfo p,
+.sectionText p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.slide-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tecnology-icons {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.techIcon {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.personalityMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.personalityContainer {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 20px);
+    box-sizing: border-box;
+}
+
+.personalityTrait {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Seções de frases */
+.phase {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.phaseImg {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.phaseCharacter {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.phaseQuote {
+    font-style: italic;
+    color: #555;
+}
+
+/* Seção de motivação */
+.awnserMotivation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.divTextMotivation {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.textMotivation {
+    color: #555;
+}
+
+/* Rodapé */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.desktopFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.socialLink a,
+.contactLink a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.socialLink img,
+.footerIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.buttonFooter {
+    margin: 10px;
+}
+
+.footerText {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Media Queries para responsividade */
+@media (min-width: 768px) {
+    .introduce {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .blob {
+        display: block;
+        width: 200px;
+    }
+
+    .mainIntroduce {
+        flex-direction: row;
+    }
+
+    .profileImg {
+        margin-right: 20px;
+    }
+
+    .welcomeMessage {
+        text-align: left;
+    }
+
+    .arrowContainer {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .personalityContainer {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .phaseImg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .personalityContainer {
+        flex: 1 1 100%;
+    }
+
+    .welcomeTitle {
+        font-size: 1.5rem;
+    }
+
+    .welcomeName,
+    .welcomePosition {
+        font-size: 1rem;
+    }
+
+    .techIcon {
+        width: 40px;
+    }
+}
+
+
+
+
+
+/* .profileImg {
+    border-radius: 200px;
+    height: 45vh;
+    width: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  
+        0 0 60px 30px #e53939, 
+        0 0 100px 60px rgb(235, 234, 235);
+    border: 1px solid white;
+} */
+
+/* .profileImg img {
+    height: 240px;
+    border-radius: 200px;
+    width: 240px;
+    z-index: 1;
+    object-fit: cover;
+} */

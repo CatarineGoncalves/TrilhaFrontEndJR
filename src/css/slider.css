@@ -1,0 +1,33 @@
+.slide-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.tecnology-icons {
+    display: flex;
+    animation: slide-animation 15s infinite;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    background-color: white;
+}
+
+.techIcon {
+    max-height: 20vh;
+    max-width: 20vw;
+    margin: 10px;
+    object-fit: scale-down;
+}
+
+@keyframes slide-animation {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
